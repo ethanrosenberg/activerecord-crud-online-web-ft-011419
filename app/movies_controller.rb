@@ -97,7 +97,7 @@ def can_update_multiple_items_at_once
     found_movie.update(title: "A Movie")
     found_movie.save
   end
-  __
+
 end
 
 def can_destroy_a_single_item

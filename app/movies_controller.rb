@@ -80,9 +80,6 @@ def can_be_found_updated_and_saved
   found_movie.update(title: "Even Awesomer Flick")
   found_movie.save
 
-  __
-  __
-  __
 end
 
 def can_update_using_update_method

@@ -110,6 +110,8 @@ end
 def can_destroy_all_items_at_once
   10.times do |i|
     Movie.create(title: "Movie_#{i}")
+    found_movie = Movie.find_by(title: "Movie_#{i}")
+    found_movie.destroy
   end
   Movie.destroy_all
   __

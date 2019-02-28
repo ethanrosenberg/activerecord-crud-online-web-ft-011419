@@ -113,6 +113,5 @@ def can_destroy_all_items_at_once
     found_movie = Movie.find_by(title: "Movie_#{i}")
     found_movie.destroy
   end
-  Movie.destroy_all
-  __
+
 end

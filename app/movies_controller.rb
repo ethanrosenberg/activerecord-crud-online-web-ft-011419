@@ -93,6 +93,9 @@ def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
+    found_movie = Movie.find_by(title: "Movie_#{i}")
+    found_movie.update(title: "A Movie")
+    found_movie.save
   end
   __
 end
